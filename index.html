@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кубический рассвет — Книга</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="hamburger" id="hamburger" aria-label="Меню">
+  <span></span><span></span><span></span>
+</button>
+<div class="overlay" id="overlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span class="logo">⛏ MINECRAFT</span>
+    <span class="logo-sub">Кубический рассвет</span>
+  </div>
+
+  <nav class="nav" id="nav"></nav>
+
+  <div class="progress-box">
+    <div class="progress-label">
+      <span>Прочитано</span>
+      <span id="progress-text">0%</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+</aside>
+
+<main class="content" id="content">
+  <div class="cover-screen" id="cover-screen">
+    <div class="cover-inner">
+      <img class="cover-image" src="textures/123456.jpg" alt="Кубический рассвет">
+      <h1 class="cover-title">Кубический рассвет</h1>
+      <p class="cover-subtitle">Дневник выжившего в кубическом мире</p>
+      <button class="cover-btn" id="cover-open">Начать чтение</button>
+    </div>
+  </div>
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
